@@ -1,0 +1,81 @@
+
+FluidRenderer.java,5125
+public class FluidRenderer 42,975
+	public static final String TAG FluidRenderer.TAG43,1037
+	public static final int mGridSize FluidRenderer.mGridSize45,1089
+	public Context mCtx;FluidRenderer.mCtx47,1131
+	public float mMx=FluidRenderer.mMx48,1153
+	public float mOmx=FluidRenderer.mOmx49,1187
+	public static boolean mTouched FluidRenderer.mTouched51,1225
+	private static int mFrames FluidRenderer.mFrames53,1268
+	private static long T0 FluidRenderer.T054,1301
+	private float[] mMvp_matrix FluidRenderer.mMvp_matrix56,1331
+	private float[] mProjection_matrix FluidRenderer.mProjection_matrix57,1377
+	private float[] mModelview_matrix FluidRenderer.mModelview_matrix58,1430
+	private int mMvp_matrix_handle;FluidRenderer.mMvp_matrix_handle60,1483
+	public int mScreenWidth FluidRenderer.mScreenWidth62,1517
+	public int mScreenHeight FluidRenderer.mScreenHeight63,1547
+	private static final int SIZEOF_FLOAT FluidRenderer.SIZEOF_FLOAT65,1579
+	private static final int SIZEOF_SHORT FluidRenderer.SIZEOF_SHORT66,1623
+	private static final int SIZEOF_INT FluidRenderer.SIZEOF_INT67,1667
+	private static final int SIZEOF_BYTE FluidRenderer.SIZEOF_BYTE68,1709
+	private static final int QUAD_IND FluidRenderer.QUAD_IND76,2026
+	private static int[] mVboIds FluidRenderer.mVboIds79,2209
+	private static final int U_TEX FluidRenderer.U_TEX85,2336
+	private static int[] mTexIds FluidRenderer.mTexIds87,2440
+	private static int[] mFboIds FluidRenderer.mFboIds90,2501
+	private static final int ADVECT FluidRenderer.ADVECT100,2738
+	private static int mShaderIds FluidRenderer.mShaderIds102,2852
+	private static final float mDt FluidRenderer.mDt105,2920
+	private static final float mDiff FluidRenderer.mDiff106,2959
+	private static final float mVisc FluidRenderer.mVisc107,3001
+	private static final float mForceScale FluidRenderer.mForceScale108,3043
+	private static final float mSourceAdd FluidRenderer.mSourceAdd109,3091
+	private static final float mForceRadius FluidRenderer.mForceRadius110,3138
+	private static final int NUM_JACOBI_ITERS FluidRenderer.NUM_JACOBI_ITERS111,3187
+	priavte static ArrayList<Force> mForceList FluidRenderer.mForceList113,3237
+	public FluidRenderer(FluidRenderer.FluidRenderer115,3310
+	private static void initializeVBO(FluidRenderer.initializeVBO124,3471
+	private static void createIndicesBuffer(FluidRenderer.createIndicesBuffer186,5711
+	private static void createVerticesBuffer(FluidRenderer.createVerticesBuffer197,6216
+	private static void initializeTextures(FluidRenderer.initializeTextures209,6709
+	private static void createTexture(FluidRenderer.createTexture219,7029
+	private void initializeFBO(FluidRenderer.initializeFBO231,7598
+	private void initializeShaderPrograms(FluidRenderer.initializeShaderPrograms235,7678
+	public void onSurfaceCreated(FluidRenderer.onSurfaceCreated256,8685
+	private void clearAllTextures(FluidRenderer.clearAllTextures261,8816
+	private void clearTexture(FluidRenderer.clearTexture272,9158
+	public void onDrawFrame(FluidRenderer.onDrawFrame281,9432
+	public void onSurfaceChanged(FluidRenderer.onSurfaceChanged290,9628
+	public void render(FluidRenderer.render303,9983
+	public void simulate(FluidRenderer.simulate314,10290
+	private void advect(FluidRenderer.advect330,10656
+	private void diffuse(FluidRenderer.diffuse357,11860
+	private void project(FluidRenderer.project395,13333
+	private void setBoundary(FluidRenderer.setBoundary403,13526
+	private void calculateDivergence(FluidRenderer.calculateDivergence440,14800
+	private void resetPressureField(FluidRenderer.resetPressureField458,15566
+	private void calculatePressureField(FluidRenderer.calculatePressureField467,15876
+	private void calculateDivergenceFreeVelocityField(FluidRenderer.calculateDivergenceFreeVelocityField497,17225
+	private void drawQuad(FluidRenderer.drawQuad521,18244
+		private void drawLine(FluidRenderer.drawLine564,19687
+	private void swapTexIds(FluidRenderer.swapTexIds602,20964
+	private void checkFBOStatus(FluidRenderer.checkFBOStatus609,21110
+	public void onUserInteraction(FluidRenderer.onUserInteraction618,21388
+	public void set_mvp_matrix(FluidRenderer.set_mvp_matrix671,23361
+	public void calculate_fps(FluidRenderer.calculate_fps686,23819
+	public static void checkGlError(FluidRenderer.checkGlError701,24166
+	public static int clamp(FluidRenderer.clamp708,24423
+	public class Force{FluidRenderer.Force715,24571
+		float fx;FluidRenderer.Force.fx716,24592
+		float fy;FluidRenderer.Force.fy717,24604
+		float xCell;FluidRenderer.Force.xCell718,24616
+		float yCell;FluidRenderer.Force.yCell719,24631
+class ShaderLoader{ShaderLoader729,24740
+	public Context mCtx;ShaderLoader.mCtx730,24760
+	private static final String TAG ShaderLoader.TAG731,24782
+	public ShaderLoader(ShaderLoader.ShaderLoader733,24836
+	public int load(ShaderLoader.load737,24904
+	private String assetFileReader(ShaderLoader.assetFileReader766,25730
+	private int load_shader(ShaderLoader.load_shader778,26094
+	private void load_program(ShaderLoader.load_program794,26740
