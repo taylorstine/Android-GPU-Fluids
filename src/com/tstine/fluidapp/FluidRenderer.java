@@ -858,5 +858,57 @@ public class FluidRenderer implements GLSurfaceView.Renderer{
 											0, 1, 0);
 		Matrix.multiplyMM(mMvp_matrix, 0, mProjection_matrix,
 											0, mModelview_matrix, 0);
-		
-		int mvpMatLoc = GLES20.glGetUn
+
+		int mvpMatLoc = GLES20.glGetUniformLocation( mShaderIds[RENDER],
+																											"mvp_matrix" );
+		GLES20.glUniformMatrix4fv( mvpMatLoc, 1, false, mMvp_matrix, 0 );
+	}
+
+
+	public void calculate_fps(){
+		mFrames++;
+		Calendar calendar = Calendar.getInstance();
+		long t = calendar.getTimeInMillis();
+		if(t - T0 >= 5000){
+			float seconds = (float)(t-T0)/1000.0f;
+			float fps = mFrames/seconds;
+			Log.d(TAG, mFrames + " frame in "+ seconds + " seconds = " +
+						fps + " FPS\n");
+			T0 = t;
+			mFrames = 0;
+		}
+	}
+
+
+	public  void checkGlError(String glOperation) {
+		int error;
+		while ((error = GLES20.glGetError()) != GLES20.GL_NO_ERROR) {
+			Log.e(TAG, glOperation + ": glError " + error);
+			throw new RuntimeException(glOperation + ": glError " + error);
+		}
+	}
+	public  int clamp(int value, int min, int max){
+		value = value > max ? max : value;
+		value = value < min ? 1 : value;
+		return value;
+	}
+
+	private short biject( float x ){
+		return (short)(x * 2 - 1);
+	}
+
+
+	public class Force{
+		public short fx;
+		public short fy;
+		public int xCell;
+		public int yCell;
+		Force(int xCell, int yCell, short fx, short fy){
+			this.fx = fx;
+			this.fy = fy;
+			this.xCell = xCell;
+			this.yCell = yCell;
+		}
+	}
+
+}
