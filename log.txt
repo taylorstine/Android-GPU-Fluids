@@ -1,0 +1,115 @@
+--------- beginning of /dev/log/main
+D/AndroidRuntime(14851): 
+D/AndroidRuntime(14851): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime(14851): CheckJNI is OFF
+D/dalvikvm(14851): Trying to load lib libjavacore.so 0x0
+D/dalvikvm(14851): Added shared lib libjavacore.so 0x0
+D/dalvikvm(14851): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm(14851): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime(14851): Calling main entry com.android.commands.pm.Pm
+--------- beginning of /dev/log/system
+W/ActivityManager(  443): No content provider found for permission revoke: file:///data/local/tmp/Fluidz-debug.apk
+W/ActivityManager(  443): No content provider found for permission revoke: file:///data/local/tmp/Fluidz-debug.apk
+I/PackageManager(  443): Copying native libraries to /data/app-lib/vmdl-650547699
+I/PackageParser(  443): com.tstine.fluidapp: compat added android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE
+I/PackageManager(  443): Removing non-system package:com.tstine.fluidapp
+I/ActivityManager(  443): Force stopping package com.tstine.fluidapp appid=10080 user=-1
+I/ActivityManager(  443): Killing proc 14764:com.tstine.fluidapp/u0a10080: force stop com.tstine.fluidapp
+I/PackageManager(  443): Running dexopt on: com.tstine.fluidapp
+I/PackageManager(  443): Package com.tstine.fluidapp codePath changed from /data/app/com.tstine.fluidapp-2.apk to /data/app/com.tstine.fluidapp-1.apk; Retaining data and using new
+D/dalvikvm(14871): DexOpt: load 12ms, verify+opt 11ms, 238564 bytes
+W/PackageManager(  443): Code path for pkg : com.tstine.fluidapp changing from /data/app/com.tstine.fluidapp-2.apk to /data/app/com.tstine.fluidapp-1.apk
+I/ActivityManager(  443): Force stopping package com.tstine.fluidapp appid=10080 user=-1
+W/PackageManager(  443): Resource path for pkg : com.tstine.fluidapp changing from /data/app/com.tstine.fluidapp-2.apk to /data/app/com.tstine.fluidapp-1.apk
+D/PackageManager(  443): New package installed in /data/app/com.tstine.fluidapp-1.apk
+I/ActivityManager(  443): Force stopping package com.tstine.fluidapp appid=10080 user=0
+I/InputReader(  443): Reconfiguring input devices.  changes=0x00000010
+D/dalvikvm(  735): GC_EXPLICIT freed 2602K, 26% free 15906K/21296K, paused 4ms+7ms, total 55ms
+I/InputReader(  443): Reconfiguring input devices.  changes=0x00000010
+D/dalvikvm( 6575): GC_EXPLICIT freed 197K, 7% free 7577K/8124K, paused 2ms+19ms, total 63ms
+D/dalvikvm(14949): GC_EXPLICIT freed 167K, 25% free 10265K/13668K, paused 4ms+5ms, total 90ms
+I/ActivityManager(  443): Start proc com.android.keychain for broadcast com.android.keychain/.KeyChainBroadcastReceiver: pid=14880 uid=1000 gids={41000, 1015, 1028, 3002, 3001, 3003, 3007}
+W/ContextImpl(14880): Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1352 android.content.ContextWrapper.startService:450 android.content.ContextWrapper.startService:450 com.android.keychain.KeyChainBroadcastReceiver.onReceive:12 android.app.ActivityThread.handleReceiver:2376 
+I/ActivityManager(  443): Start proc jp.co.omronsoft.iwnnime.ml for broadcast jp.co.omronsoft.iwnnime.ml/.UninstallReceiver: pid=14895 uid=10060 gids={50060, 1028}
+D/dalvikvm(  443): GC_EXPLICIT freed 3385K, 33% free 22756K/33792K, paused 13ms+16ms, total 270ms
+D/dalvikvm(  443): WAIT_FOR_CONCURRENT_GC blocked 100ms
+D/AndroidRuntime(14851): Shutting down VM
+D/dalvikvm(14851): GC_CONCURRENT freed 91K, 17% free 459K/552K, paused 0ms+1ms, total 5ms
+D/dalvikvm(13289): GC_FOR_ALLOC freed 268K, 8% free 7466K/8112K, paused 32ms, total 49ms
+D/dalvikvm( 8277): GC_CONCURRENT freed 389K, 7% free 7315K/7852K, paused 5ms+1ms, total 24ms
+D/dalvikvm(  443): GC_EXPLICIT freed 263K, 33% free 22655K/33792K, paused 5ms+21ms, total 192ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 5096K, 39% free 13018K/21296K, paused 41ms, total 42ms
+D/dalvikvm( 6300): GC_FOR_ALLOC freed 229K, 9% free 8747K/9524K, paused 39ms, total 39ms
+W/GCoreUlr( 6300): sending intent to update reporting state
+I/GCoreUlr( 6300): Ensuring that reporting is stopped because of reasons: {account#1#=[InactiveReason{mVersionCode=0, mIdentifier=2, mName='DeferringToGmm'}]}
+D/GCoreFlp( 6300): Unknown pending intent to remove.
+I/GCoreUlr( 6300): Unbound from all location providers
+I/GCoreUlr( 6300): Ensuring that reporting is stopped because of reasons: {account#1#=[InactiveReason{mVersionCode=0, mIdentifier=2, mName='DeferringToGmm'}]}
+D/GCoreFlp( 6300): Unknown pending intent to remove.
+I/GCoreUlr( 6300): Unbound from all location providers
+D/dalvikvm(  735): GC_FOR_ALLOC freed 2369K, 42% free 12417K/21296K, paused 26ms, total 26ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 492K, 40% free 12878K/21296K, paused 23ms, total 23ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 907K, 37% free 13587K/21296K, paused 22ms, total 22ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 957K, 32% free 14591K/21296K, paused 25ms, total 25ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 770K, 28% free 15353K/21296K, paused 25ms, total 25ms
+I/dalvikvm-heap(  735): Grow heap (frag case) to 16.579MB for 1513696-byte allocation
+D/dalvikvm(  735): GC_FOR_ALLOC freed 1257K, 32% free 15574K/22776K, paused 24ms, total 24ms
+D/dalvikvm( 6575): GC_CONCURRENT freed 224K, 5% free 7739K/8124K, paused 3ms+2ms, total 20ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 674K, 24% free 17468K/22776K, paused 25ms, total 25ms
+I/dalvikvm-heap(  735): Grow heap (frag case) to 19.760MB for 2683424-byte allocation
+D/dalvikvm(  735): GC_FOR_ALLOC freed 1256K, 26% free 18832K/25400K, paused 25ms, total 25ms
+D/dalvikvm(  735): GC_FOR_ALLOC freed 4465K, 25% free 15984K/21296K, paused 23ms, total 23ms
+I/dalvikvm-heap(  735): Grow heap (frag case) to 17.823MB for 2172688-byte allocation
+D/dalvikvm(  735): GC_FOR_ALLOC freed 514K, 25% free 17591K/23420K, paused 21ms, total 21ms
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+W/ActivityManager(  443): Permission denied: checkComponentPermission() owningUid=10053
+I/ActivityManager(  443): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.tstine.fluidapp/.MainActivity} from pid 735
+D/dalvikvm(14932): Late-enabling CheckJNI
+I/ActivityManager(  443): Start proc com.tstine.fluidapp for activity com.tstine.fluidapp/.MainActivity: pid=14932 uid=10080 gids={50080, 1015, 1028}
+D/dalvikvm(14932): GC_FOR_ALLOC freed 42K, 3% free 7320K/7508K, paused 19ms, total 19ms
+I/dalvikvm-heap(14932): Grow heap (frag case) to 8.288MB for 1048592-byte allocation
+D/dalvikvm(14932): GC_FOR_ALLOC freed <1K, 3% free 8343K/8536K, paused 15ms, total 15ms
+D/dalvikvm(14932): GC_CONCURRENT freed <1K, 3% free 8351K/8536K, paused 7ms+3ms, total 31ms
+V/PhoneStatusBar(  566): setLightsOn(true)
+D/libEGL  (14932): loaded /system/lib/egl/libEGL_tegra.so
+D/libEGL  (14932): loaded /system/lib/egl/libGLESv1_CM_tegra.so
+D/libEGL  (14932): loaded /system/lib/egl/libGLESv2_tegra.so
+I/ActivityManager(  443): Displayed com.tstine.fluidapp/.MainActivity: +267ms
+D/FluidRenderer(14932): Program for simulate_vertex_shader.glsl advect_frag_shader.glsl loaded!
+D/FluidRenderer(14932): Program for simulate_vertex_shader.glsl jacobi_frag_shader.glsl loaded!
+D/FluidRenderer(14932): Program for simulate_vertex_shader.glsl force_frag_shader.glsl loaded!
+D/FluidRenderer(14932): Shader Failure info:
+D/FluidRenderer(14932):  (1) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (3) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (6) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (7) : error C7502: OpenGL does not allow type suffix 'f' on constant literals
+D/FluidRenderer(14932): (7) : error C7502: OpenGL does not allow type suffix 'f' on constant literals
+D/FluidRenderer(14932): (10) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (11) : error C7502: OpenGL does not allow type suffix 'f' on constant literals
+D/FluidRenderer(14932): (11) : error C7502: OpenGL does not allow type suffix 'f' on constant literals
+D/FluidRenderer(14932): (15) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (16) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (17) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (18) : error C7573: OpenGL/ES requires precision specifier on float types
+D/FluidRenderer(14932): (20) : error C7011: implicit cast from "float" to "vec4"
+W/dalvikvm(14932): threadid=11: thread exiting with uncaught exception (group=0x41e05930)
+E/AndroidRuntime(14932): FATAL EXCEPTION: GLThread 7149
+E/AndroidRuntime(14932): java.lang.RuntimeException: Frag shader compile failed: div_frag_shader.glsl
+E/AndroidRuntime(14932): 	at com.tstine.fluidapp.ShaderLoader.load(ShaderLoader.java:65)
+E/AndroidRuntime(14932): 	at com.tstine.fluidapp.FluidRenderer.initializeShaderPrograms(FluidRenderer.java:271)
+E/AndroidRuntime(14932): 	at com.tstine.fluidapp.FluidRenderer.onSurfaceCreated(FluidRenderer.java:127)
+E/AndroidRuntime(14932): 	at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1494)
+E/AndroidRuntime(14932): 	at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)
+W/ActivityManager(  443):   Force finishing activity com.tstine.fluidapp/.MainActivity
+I/ActivityManager(  443): No longer want com.android.keychain (pid 14880): empty #17
+I/ActivityManager(  443): No longer want jp.co.omronsoft.iwnnime.ml (pid 14895): empty #17
+D/dalvikvm( 6639): GC_CONCURRENT freed 928K, 10% free 10422K/11504K, paused 3ms+3ms, total 42ms
+D/Finsky  ( 6639): [1] 5.onFinished: Installation state replication succeeded.
